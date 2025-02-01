@@ -1,0 +1,8 @@
+aiogram
+pyrogram
+yt-dlp
+cloudscraper
+selenium
+webdriver-manager
+beautifulsoup4
+requests
