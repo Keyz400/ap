@@ -1,9 +1,3 @@
-Here’s a **`README.md`** file for your GitHub repository, along with instructions on how to host the bot on a **VPS** and **Render**.
-
----
-
-## **README.md**
-
 ```markdown
 # Anime Download Bot 🤖
 
