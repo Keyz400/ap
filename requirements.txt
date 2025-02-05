@@ -2,6 +2,5 @@ requests
 beautifulsoup4
 colorama
 pyrogram
-sqlite3
 selenium
 chromedriver-autoinstaller
