@@ -8,7 +8,6 @@ chromedriver-autoinstaller
 chromium
 bs4~=0.0.2
 tqdm
-json
 threading
 os
 re
