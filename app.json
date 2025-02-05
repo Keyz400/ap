@@ -6,19 +6,19 @@
   "env": {
     "API_ID": {
       "description": "Your Telegram API ID",
-      "required": true
+      "required": false
     },
     "API_HASH": {
       "description": "Your Telegram API Hash",
-      "required": true
+      "required": false
     },
     "BOT_TOKEN": {
       "description": "Your Telegram Bot Token",
-      "required": true
+      "required": false
     },
     "HEROKU_API_KEY": {
       "description": "Your Heroku API Key",
-      "required": true
+      "required": false
     }
   }
 }
