@@ -1,0 +1,24 @@
+{
+  "name": "Anime Downloader Bot",
+  "description": "A Pyrogram-based bot for downloading anime from GogoAnime.",
+  "repository": "https://github.com/Keyz400/ggatg",
+  "stack": "container",
+  "env": {
+    "API_ID": {
+      "description": "Your Telegram API ID",
+      "required": true
+    },
+    "API_HASH": {
+      "description": "Your Telegram API Hash",
+      "required": true
+    },
+    "BOT_TOKEN": {
+      "description": "Your Telegram Bot Token",
+      "required": true
+    },
+    "HEROKU_API_KEY": {
+      "description": "Your Heroku API Key",
+      "required": true
+    }
+  }
+}
