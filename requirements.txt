@@ -3,4 +3,3 @@ colorama
 beautifulsoup4
 pyrogram
 tgcrypto
-sqlite3
