@@ -1,5 +1,7 @@
 requests
-colorama
 beautifulsoup4
+colorama
 pyrogram
-tgcrypto
+sqlite3
+selenium
+chromedriver-autoinstaller
