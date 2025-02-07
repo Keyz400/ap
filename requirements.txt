@@ -10,3 +10,5 @@ bs4~=0.0.2
 tqdm
 aiohttp~=3.10.10
 aiofiles~=24.1.0
+Flask
+gunicorn
