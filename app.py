@@ -36,8 +36,8 @@ HTML_TEMPLATE = """
 <body>
     <div class="card">
         <h1>Welcome to Vinjak</h1>
-        <p>Your Telegram Handle:</p>
-        <p class="handle">tg~@vinjak</p>
+        <p>My Telegram Handle:</p>
+        <p class="handle">@vinjak</p>
     </div>
 </body>
 </html>
