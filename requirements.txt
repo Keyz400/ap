@@ -12,3 +12,4 @@ aiohttp~=3.10.10
 aiofiles~=24.1.0
 Flask
 gunicorn
+webdriver_manager
