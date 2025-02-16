@@ -13,3 +13,6 @@ aiofiles~=24.1.0
 Flask
 gunicorn
 webdriver_manager
+playwright
+loguru
+python-telegram-bot
