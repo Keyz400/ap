@@ -14,9 +14,9 @@ import requests
 # Initialize Pyrogram client
 app = Client(
     "animepahe_bot",
-    api_id=28442198,
-    api_hash="your_api_hash_here",
-    bot_token="your_bot_token_here"
+    api_id=4030671,
+    api_hash="c1806a30e8c9c69a4a1bb59c28f37318",
+    bot_token="7990775956:AAFPn4NE7HJcKxPkHI6f9EldeR3PUMplzNY"
 )
 
 # Global variables to store user states
