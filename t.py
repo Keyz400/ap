@@ -5,6 +5,8 @@ from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options
 from selenium import webdriver
+from selenium.webdriver.chrome.service import Service
+from webdriver_manager.chrome import ChromeDriverManager
 from time import sleep
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
@@ -43,7 +45,11 @@ class AnimePaheClient:
         chrome_options.add_argument("--headless")  # Run Chrome in headless mode
         chrome_options.add_argument("--no-sandbox")
         chrome_options.add_argument("--disable-dev-shm-usage")
-        driver = webdriver.Chrome(options=chrome_options)
+        
+        # Use webdriver_manager to automatically manage ChromeDriver
+        service = Service(ChromeDriverManager().install())
+        driver = webdriver.Chrome(service=service, options=chrome_options)
+        
         driver.get(url)
         retry_cnt = 1
         while retry_cnt <= max_retries:
@@ -163,6 +169,24 @@ class AnimePaheClient:
         parsed_js_code = re.sub(r'\b(\w+)\b', lambda e: d.get(e.group(0)) or e.group(0), p)
         parsed_link = re.search(r'http.*\.m3u8', parsed_js_code).group(0)
         return parsed_link
+
+# Add /start command
+@app.on_message(filters.command("start"))
+def start(client, message):
+    message.reply_text(
+        "👋 Hi! I'm AnimePahe Bot. Use /search <anime_name> to find anime episodes and download links."
+    )
+
+# Add /help command
+@app.on_message(filters.command("help"))
+def help(client, message):
+    message.reply_text(
+        "📚 **Commands:**\n"
+        "- /start: Start the bot\n"
+        "- /help: Show this help message\n"
+        "- /search <anime_name>: Search for anime\n\n"
+        "Example: `/search one piece`"
+    )
 
 @app.on_message(filters.command("search"))
 def search_anime(client, message):
